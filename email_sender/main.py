@@ -5,7 +5,7 @@ titulo = 'Nova menssagem sobre seu Site!'
 menssagem = "vou te hackiei kkkkk"
 nome = "rafael"
 r = 0
-for r in range(0, 10):
+for r in range(0, 100):
     email = outlook.CreateItem(0)
 
     email.To = "mamacosupremo.sol@gmail.com"
