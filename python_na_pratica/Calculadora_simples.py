@@ -3,7 +3,7 @@ from tkinter import ttk
 
 
 def command_c():
-    inittext.set('0')
+    inittext.set('')
     global todos_valores
     todos_valores = ''
 
