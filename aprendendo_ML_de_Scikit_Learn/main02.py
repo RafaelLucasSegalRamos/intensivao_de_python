@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report
 iris = load_iris()
 X, y = load_iris(return_X_y=True)
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=52)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.9, random_state=22)
 
 clf = KNeighborsClassifier(n_neighbors=10)
 

@@ -20,7 +20,7 @@ sns.pairplot(iris_df[['sepal length (cm)', 'sepal width (cm)', "petal length (cm
 
 X = iris.data
 y = iris.target
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=15)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.9, random_state=15)
 clf = svm.SVC(C=1)
 clf.fit(X_train, y_train)
 
