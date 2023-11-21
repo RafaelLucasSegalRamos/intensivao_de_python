@@ -1,5 +1,6 @@
 # Exemplo de API de cotação de moedas
 
+# Bibliotecas necessárias para a utilização de APIs em Python
 import requests
 import json
 
