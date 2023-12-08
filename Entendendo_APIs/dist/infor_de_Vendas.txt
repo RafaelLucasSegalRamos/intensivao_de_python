@@ -1,0 +1,3 @@
+Maior venda: 27.00
+Menor venda: 1.60
+total de vendas: 3026.10
