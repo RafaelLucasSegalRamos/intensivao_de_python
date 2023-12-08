@@ -21,3 +21,7 @@ if __name__ == '__main__':
             if k == "bid" or k == "code" or k == "codein" or k == "name":
                 print(f"{k}: {v}")
         print("-=-" * 10)
+
+
+# Como alterar o banco apenas pelo prompt de comando
+# http get http://(seu link)/pessoas
