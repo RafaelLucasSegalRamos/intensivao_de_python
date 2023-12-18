@@ -25,6 +25,7 @@ def ler_todos_Prod():
     linhaEspc()
     cursor.execute('select * from vendas')
     resultados = cursor.fetchall()
+    print(resultados)
     for linha in resultados:
         print(f'O produto de ID {linha[0]} posui o nome de produto: {linha[1]} e custa R${linha[2]:.2f}\n')
         sleep(0.5)
