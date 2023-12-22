@@ -63,5 +63,16 @@ def get_bool(text="Put a value for BOOL variable [True or False]"):
         print("Try again.\033[0m", end=" ")
 
 
+def sum_Dict(*dicts):
+    """
+    This function returns the sum of two or more dictionaries.
+    :param dicts: This is the dictionaries that will be summed.
+    :return: Will return the sum of two or more dictionaries.
+    """
+    d3 = {}
+    for i in dicts:
+        d3 = {**d3, **i}
+    return d3
+
 if __name__ == '__main__':
     pass
