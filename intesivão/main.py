@@ -1,7 +1,9 @@
 import pandas as pd
 import openpyxl
 from twilio.rest import Client
+import Secrets
 
+codes = Secrets()
 # Passo de solução
 
 # Abrir os 6 arquivos em Excel
@@ -16,15 +18,15 @@ for mounth in mounth_list:
         print(f'No mês de {mounth} o funcionário {worker} vendeu R${sold},00')
 
 
-acount_sid = "AC97acb3271ecdd28d1c89b2d50d1a7cad"
-auth_token = '0a362c979f9a6606cdfdc76d9a62dc73'
+acount_sid = codes.ACCAUNT_SID
+auth_token = codes.AUTH_TOKEN
 
 client = Client(acount_sid, auth_token)
 
 message = client.messages.create(
-    to="+5519996534693",
-    from_="+19035231705",
-    body=f"Eai Will :)"
+    to=codes.MY_PHONE_NUMBER,
+    from_=codes.PHONE_NUMBER,
+    body=f"Eai {codes.RANDOM_NAME} :)"
 )
 
 
